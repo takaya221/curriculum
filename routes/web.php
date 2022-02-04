@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*getリクエストを受け取るとPostControllerのindexを返す*/
+Route::get('/', 'PostController@index');
