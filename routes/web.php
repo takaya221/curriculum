@@ -13,4 +13,7 @@
 
 /*getリクエストを受け取るとPostControllerのindexを返す*/
 Route::get('/', 'PostController@index');
+Route::get('/posts/create', 'PostController@create');
+/*POSTアクセスを受けるとPostControllerのstoreを返す*/
 Route::get('/posts/{post}', 'PostController@show');
+Route::post('/posts', 'PostController@store');
